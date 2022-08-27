@@ -5,7 +5,7 @@
              x:Class="MauiApp1.CamaMesaBanho">
 
     <ScrollView>
-        <VerticalStackLayout>
+        <Grid RowDefinitions="Auto, *">
             <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
@@ -34,10 +34,17 @@
 
             </VerticalStackLayout>
 
-            <Label
+            <Frame
+                Grid.Row="1"
+                VerticalOptions="End"
+                >
+                <Label
                 Text="{Binding PesoTotal,StringFormat='Peso Total: {0}kg'}"
-                FontSize="30"/>
-        </VerticalStackLayout>
+                FontSize="20"
+                    HorizontalTextAlignment="Center"
+                />
+            </Frame>
+        </Grid>
     </ScrollView>
 
 </ContentPage>
