@@ -15,9 +15,8 @@
 
                 <BindableLayout.ItemTemplate>
                     <DataTemplate>
-                        <Grid ColumnDefinitions="*, Auto, *"
+                        <Grid ColumnDefinitions="*, Auto, Auto"
                           ColumnSpacing="10"
-                          HeightRequest="60"
                         >
                             <Label Text="{Binding Nome}"
                                HorizontalOptions="End"
@@ -26,7 +25,7 @@
                                HorizontalOptions="Start"/>
                             <Stepper
                             Grid.Column="2"
-                            Rotation="-90"
+                                WidthRequest="100"
                             HorizontalOptions="Start"
                             Value="{Binding Quantidade}"
                             />
