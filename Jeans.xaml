@@ -2,11 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:MauiApp1.ViewModel"
-             x:Class="MauiApp1.Jeans">
-
-    <ContentPage.BindingContext>
-        <vm:MyViewModel/>
-    </ContentPage.BindingContext>
+             x:Class="MauiApp1.Jeans"
+             >
 
     <ScrollView>
         <VerticalStackLayout>
@@ -41,7 +38,8 @@
 
             <Label
                 Text="{Binding PesoTotal,StringFormat='Peso Total: {0}kg'}"
-                FontSize="30"/>
+                FontSize="30"
+                VerticalOptions="End"/>
         </VerticalStackLayout>
     </ScrollView>
 

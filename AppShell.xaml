@@ -6,9 +6,6 @@
     xmlns:local="clr-namespace:MauiApp1"
     xmlns:vm="clr-namespace:MauiApp1.ViewModel"
     >
-    <Shell.BindingContext>
-        <vm:MyViewModel/>
-    </Shell.BindingContext>
 
 
     <TabBar >

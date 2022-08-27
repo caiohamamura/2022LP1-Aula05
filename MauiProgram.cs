@@ -1,4 +1,6 @@
-﻿namespace MauiApp1;
+﻿using MauiApp1.ViewModel;
+
+namespace MauiApp1;
 
 public static class MauiProgram
 {
@@ -13,6 +15,11 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-		return builder.Build();
+		builder.Services.AddSingleton<MainPage>();
+        builder.Services.AddSingleton<CamaMesaBanho>();
+        builder.Services.AddSingleton<Jeans>();
+        builder.Services.AddSingleton<MyViewModel>();
+
+        return builder.Build();
 	}
 }

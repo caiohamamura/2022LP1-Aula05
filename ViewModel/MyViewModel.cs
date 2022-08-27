@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace MauiApp1.ViewModel
 {
 
-    partial class Roupa : ObservableObject
+    public partial class Roupa : ObservableObject
     {
         [ObservableProperty]
         string nome;
@@ -30,7 +30,7 @@ namespace MauiApp1.ViewModel
             return roupa;
         }
     }
-    partial class MyViewModel : ObservableObject
+    public partial class MyViewModel : ObservableObject
     {
         public double PesoTotal
         {

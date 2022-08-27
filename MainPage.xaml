@@ -4,9 +4,6 @@
              xmlns:vm="clr-namespace:MauiApp1.ViewModel"
              x:Class="MauiApp1.MainPage">
 
-    <ContentPage.BindingContext>
-        <vm:MyViewModel/>
-    </ContentPage.BindingContext>
 
     <ScrollView>
         <VerticalStackLayout>

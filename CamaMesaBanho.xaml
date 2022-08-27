@@ -4,10 +4,6 @@
              xmlns:vm="clr-namespace:MauiApp1.ViewModel"
              x:Class="MauiApp1.CamaMesaBanho">
 
-    <ContentPage.BindingContext>
-        <vm:MyViewModel/>
-    </ContentPage.BindingContext>
-
     <ScrollView>
         <VerticalStackLayout>
             <VerticalStackLayout
